@@ -1,0 +1,17 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: cf81-config-server
+  cloud:
+    config:
+      uri: http://localhost:8888
+      server:
+        git:
+          uri: https://github.com/lazyliang/config
+          username: lazyliang
+          password: lazy0128
+encrypt:
+  key: cf81-config-server
+
